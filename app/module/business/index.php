@@ -6,7 +6,6 @@
 		}
 	}
 
-
 	# Filter
 	if(isset($_GET['cf'])){
 		$app->filterSet('business', $_GET);
