@@ -51,8 +51,8 @@
 ?></header>
 
 <div class="inject-subnav-right hide">
-	<li><a onclick="filterToggle('user');" class="btn btn-small"><?php echo _('Display settings'); ?></a></li>
-	<li><a href="data" class="btn btn-small btn-success"><?php echo _('New user'); ?></a></li>
+	<li><a onclick="filterToggle('user');" class="btn btn-small"><?php echo _('vis indstillinger'); ?></a></li>
+	<li><a href="data" class="btn btn-small btn-success"><?php echo _('Ny bruger'); ?></a></li>
 </div>
 
 <div id="app">
@@ -152,7 +152,7 @@
 			<tr>
 			<?php if(sizeof($users) > 0){ ?>
 				<td><input id="delall" type="checkbox" class="chk" onchange="cbchange($(this));" /></td>
-				<td colspan="3"><a href="#" onClick="userRemove();" class="btn btn-mini"><?php echo _('Remove selected items'); ?></a></td>
+				<td colspan="3"><a href="#" onClick="userRemove();" class="btn btn-mini"><?php echo _('slet markerede'); ?></a></td>
 				<td colspan="<?php echo $colspan ?>" class="pagination"><?php $app->pagination($app->apiLoad('user')->total, $app->apiLoad('user')->limit, $filter['offset'], 'index?cf&offset=%s'); ?></td>
 			<?php }else{ ?>
 				<td colspan="<?php echo (4 + $colspan) ?>">&nbsp;</td>
